@@ -78,13 +78,18 @@ body {
   background-color: #0f172a;
 }
 
-.todo-table th,
-.todo-table td {
+.todo-table th {
   padding: 10px;
   border-bottom: 1px solid #334155;
   text-align: left;
 }
 
-.no-task {
+.todo-table td {
+  padding: 10px;
+  border-bottom: 1px solid #334155;
+}
+
+.todo-table td.no-task {
+  text-align: center;
   color: #94a3b8;
 }

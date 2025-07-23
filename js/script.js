@@ -23,7 +23,7 @@ addBtn.addEventListener('click', () => {
   const todoInput = document.getElementById('todo-input');
   const dueDateInput = document.getElementById('due-date');
   const task = todoInput.value.trim();
-  const date = dueDateInput.value();
+  const date = dueDateInput.value;
 
   //validasi
   if (!task || !date) {

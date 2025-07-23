@@ -41,21 +41,21 @@ addBtn.addEventListener('click', () => {
 });
 
 deleteAllBtn.addEventListener('click', (e) => {
-  todoList.innerHTML = '<tr><td class="no-task" colspan="4" style="text-align: center;">No Task Found</td></tr>';
+  todoList.innerHTML = '<tr><td class="no-task" colspan="4">No Task Found</td></tr>';
 });
 
 todoList.addEventListener('click', (e) => {
   if (e.target.classList.contains('delete-btn')) {
     e.target.closest('tr').remove();
     if (todoList.children.length === 0) {
-      todoList.innerHTML = '<tr><td class="no-task" colspan="4" style="text-align: center;">No Task Found</td></tr>';
+      todoList.innerHTML = '<tr><td class="no-task" colspan="4">No Task Found</td></tr>';
     }
   }
 });
 
 filterBtn.addEventListener('click', () => {
   const filterDate = document.getElementById('due-date').value;
-  const rows = todoList.querySelector('tr');
+  const rows = todoList.querySelectorAll('tr');
 
   if (!filterDate) {
     alert('Please choose a date to filter!');

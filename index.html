@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Todo List</title>
 </head>
 <body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>Todo List</h2>
+    </div>
+
+    <div class="input-row">
+      <input type="text" id="todo-input" placeholder="Add a todo ... ">
+      <input type="date" id="due-date">
+      <button id="add-btn">Tambah</button>
+    </div>
+
+    <div class="button-row">
+      <button id="filter-btn">Filter</button>
+      <button id="delete-btn">Delete</button>
+    </div>
+    
+    <table class="todo-table">
+      <thead>
+        <tr>
+          <th>TASK</th>
+          <th>DUE DATE</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4">No Task Found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
 </body>
 </html>
